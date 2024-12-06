@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masa Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+    <nav>
+        <div class="logo">
+            <h1>Masa Weather</h1>
+        </div>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search for cities...">
+            <ul id="results" class="result"></ul>
+        </div>
+        <div class="theme-toggle">
+            <label class="switch">
+                <input type="checkbox" id="themeSwitch">
+                <span class="slider"></span>
+            </label>
+            <p id="themeLabel">Light Mode</p>
+        </div>
+    </nav>
+    <main>
+        <div class="weather-overview">
+            <p id="temperature">Select a city to see the temperature.</p>
+            <img src="pngegg.png" alt="Weather icon" class="weather-icon">
+        </div>
+        <section class="weather-details">
+            <div id="weather">
+                <p id="city">Select a city to see the weather stats.</p>
+                <p id="temperature">Temperature: --</p>
+                <p id="humidity">Humidity: --</p>
+                <p id="windSpeed">Wind Speed: --</p>
+                <p id="condition">Condition: --</p>
+            </div>
+            <div class="hourly-forecast">
+                <div class="time-block">
+                    <p>06:00</p>
+                    <img src="pngegg.png" alt="Weather icon">
+                    <p><span>10°</span></p>
+                </div>
+                <div class="time-block">
+                    <p>06:00</p>
+                    <img src="pngegg.png" alt="Weather icon">
+                    <p><span>10°</span></p>
+                </div>
+                <div class="time-block">
+                    <p>06:00</p>
+                    <img src="pngegg.png" alt="Weather icon">
+                    <p><span>10°</span></p>
+                </div>
+                <div class="time-block">
+                    <p>06:00</p>
+                    <img src="pngegg.png" alt="Weather icon">
+                    <p><span>10°</span></p>
+                </div>
+                <div class="time-block">
+                    <p>06:00</p>
+                    <img src="pngegg.png" alt="Weather icon">
+                    <p><span>10°</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
